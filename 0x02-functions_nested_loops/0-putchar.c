@@ -1,19 +1,20 @@
-#include "holberton.h"
+#include "main.h"
 /**
- * * main - Entry point
- * * write a program tha prints Holberton, followed by a new line.
- * * Return: Always (Success)
- * */
+ * main - Print "main" followed by a new line.
+ * Description: You are not allowed to include standard libraries.
+ * Return: 0
+ */
 int main(void)
 {
-		char *ch = "_putchar";
-		while (*ch)
-				{
-							_putchar(*ch);
-									ch++;
-_putchar				}
-_putchar('\n');
-return (0);
+	char main[] = "main";
+	int i = 0;
+
+	while (main[i] != '\0')
+	{
+		_putchar(main[i]);
+		i++;
+	}
+	_putchar('\n');
+
+	return (0);
 }
-
-
