@@ -1,18 +1,20 @@
 #include "main.h"
-#include <stdio.h>
+
 /**
- * _isdigit - check the c is a digit
- * @c: the character to be checked
- * Return: 1 if digit and 0 otherwise
+ * *_strcat - concatenates @src to @dest
+ * @src: the source string to append to @dest
+ * @dest: the destiation string to be concatenated upon
+ * Return:pointer to the resulting string
  */
-int _isdigit(int c)
+
+char *_strcat(char *dest, char *src)
 {
-if (c >= '0' && c <= '9')
-{
-return (1);
-}
-else
-{
-return (0);
-}
+	int index = 0;
+	int dest_len = 0;
+
+	while (dest[index++])
+		dest_len++;
+	for (index = 0; src[index]; index++)
+		dest[dest_len++] = src[index];
+	return (dest);
 }
