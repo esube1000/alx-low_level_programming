@@ -1,20 +1,16 @@
 #include "main.h"
 
 /**
- * *_strcat - concatenates @src to @dest
- * @src: the source string to append to @dest
- * @dest: the destiation string to be concatenated upon
- * Return:pointer to the resulting string
+ * _isdigit - Checks for a digit (0-9).
+ * @c: The number to be checked.
+ *
+ * Return: 1 if the number is a digit, 0 otherwise.
  */
-
-char *_strcat(char *dest, char *src)
+int _isdigit(int c)
 {
-	int index = 0;
-	int dest_len = 0;
+	if (c >= '0' && c <= '9')
+		return (1);
 
-	while (dest[index++])
-		dest_len++;
-	for (index = 0; src[index]; index++)
-		dest[dest_len++] = src[index];
-	return (dest);
+	else
+		return (0);
 }
