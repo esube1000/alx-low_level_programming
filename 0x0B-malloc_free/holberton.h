@@ -1,8 +1,8 @@
-#ifndef FILE_main
-#define FILE_main
+#ifndef FILE_HOLBERTON
+#define FILE_HOLBERTON
 
-#include <main.h>
-#include <main.h>
+#include <stdio.h>
+#include <stdlib.h>
 
 char *_strdup(char *str);
 
